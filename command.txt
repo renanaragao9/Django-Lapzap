@@ -1,0 +1,29 @@
+Entrar no ambiente virtual
+    source venv/bin/activate
+
+Comandos Basicos
+    Iniciar o projeto
+        - python3 manage.py runserver
+    Migrate
+        - python3 manage.py makemigrations - Cria as migrações dentro da model
+        - python3 manage.py migrate - Sobe as migrações pro banco
+    App
+        - python3 manage.py startapp accounts <- Pode ser alterado para outros nomes como users, chats etc...
+    Super usuarios
+        - python3 manage.py createsuperuser
+
+Pré-requisitos
+    - sudo apt update && sudo apt install -y python3-dev libmysqlclient-dev
+    - pip install mysqlclient
+    - pip install djangorestframework
+    - pip install markdown
+    - pip install django-filter
+    - pip install python-dotenv
+    - pip install python-socketio
+    - pip install eventlet
+    - pip install django-cors-headers
+    - pip install djangorestframework-simplejwt
+
+Curiosidades
+    - self em termos do laravel é o $this que refere-se a instancia atual do modelo
+
