@@ -1,5 +1,5 @@
 import { SignInData, SignUpData } from "@/lib/schemas/authSchema";
-import { newChatData } from "@/lib/schemas/chatSchema";
+import { NewChatData } from "@/lib/schemas/chatSchema";
 import { api } from "@/lib/api";
 import { APISignIn, APISignUp } from "@/types/Auth";
 import { APIUpdateUser } from "@/types/User";
@@ -48,7 +48,7 @@ export const getChats = async () => {
   });
 };
 
-export const createChat = async (data: newChatData) => {
+export const createChat = async (data: NewChatData) => {
   return await api<APICreateChat>({
     endpoint: "chats/",
     method: "POST",

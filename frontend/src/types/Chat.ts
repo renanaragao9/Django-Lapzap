@@ -11,7 +11,7 @@ export type Chat = {
 };
 
 export type APIGetChats = {
-  Chats: Chat[];
+  chats: Chat[];
 };
 
 export type APICreateChat = {

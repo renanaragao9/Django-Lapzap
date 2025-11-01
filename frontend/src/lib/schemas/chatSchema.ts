@@ -5,4 +5,4 @@ export const newChatSchema = z.object({
   email: z.email({ message: "Email inválido" }),
 });
 
-export type newChatData = z.infer<typeof newChatSchema>;
+export type NewChatData = z.infer<typeof newChatSchema>;
